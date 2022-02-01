@@ -1,13 +1,13 @@
 smtp_server:
     gateway: gator3021.hostgator.com
-    username: xyz@abc
-    password: _SuZpN9BYm
+    username: saqibullah@markematics.com.pk
+    password: _SuZpv!N9BYm
     port: 465
     tls : False
 task_queue:
     celery_broker_url : redis://localhost:6379/0
     celery_result_backend : redis://localhost:6379/0
 email:
-    sender: xyz@abc
+    sender: saqibullah@markematics.com.pk
 others:
   secret_key : none
