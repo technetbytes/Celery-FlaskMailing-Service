@@ -49,7 +49,7 @@ print("Initializing Emailing Service ...")
 set_application_config(get_configuration())
     
 # Initialize extensions object
-init_mail()
+#init_mail()
 
 # Initialize object
 celery = make_celery(flask_app)
@@ -150,5 +150,7 @@ def taskstatus(task_id):
 
 
 if __name__ == '__main__':
+    # Initialize extensions object
+    init_mail()
     # run application
     flask_app.run(debug=True)
